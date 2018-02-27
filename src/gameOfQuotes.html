@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!--
+- time delay for API data is a bit annoying. pre-load a few or something?
+- weird h1 fonts popping up on diffrent browser sizes
+-->
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- This tells mobile browers not to scale the page down by default, which allows the media queries to instead be applied-->
+    
+    <title>Game of Quotes | Tim M Day</title>
+    <meta name="description"
+          content="A web dev project by Tim Day, showing API use vs the hard coding of basic JSON in javascript">
+    <meta name="author"
+          content="Tim Day">
+    <link rel="stylesheet" href="styles/gameOfQuotes.css">
+    
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+    
+</head>
+
+    
+<body>
+    <div class="container">
+        <header id="gameOfQuotes">
+          <h1>Game of Thrones</h1>
+          <h2>vs</h2>
+          <h1>Game of Life</h1>
+        </header>
+    
+        <div class="row">
+            <div class="col50">
+                <div class="well">
+                    <p id="quoteGoT">
+                        GoT quote will go here
+                    </p>
+                    <p id="authorGoT">
+                        <a href="#" target="_blank">author here</a>
+                    </p>
+                    <a class="twitter-share-button1 tweet" href="" target="_blank">
+                        <img src="projects/gameOfQuotes/assets_gameOfQuotes/twitter-icon-small.png" alt="twitter icon" height=15px/>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="col50">
+                    <div class="well">
+                        <p id="quoteLife">
+                            quote will go here
+                        </p>
+                        <p id="authorLife">
+                            <a href="#" target="_blank">author here</a>
+                        </p>
+                        <a class="twitter-share-button2 tweet" href="https://twitter.com/intent/tweet?text=hello" target="_blank">
+                            <img src="projects/gameOfQuotes/assets_gameOfQuotes/twitter-icon-small.png" alt="twitter icon" height=15px/>
+                        </a>
+              
+                    </div>
+                    
+                </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <button id="fetch">words</button>
+        
+        <p class="project-description">
+            This web dev project was designed to demonstrate the implementation of data from a free API as well as from a hard coded JSON data structure. It shows  quotes from G.R.R. Martin's Game of Thrones, (on the left, hard coded) and random famous quotes from esteemed real life people (on the right, from the forismatic API).<br>
+            Javascript was applied to the author names, to link to appropriate wiki articles for more information.
+        </p>
+
+        <footer>
+            <p>copyright &copy; Tim M. Day 2016. All rights reserved.</p>
+            <a href="http://www.timmday.com">BACK to TimmDay.com</a>
+        </footer>
+      
+    </div> <!--end container-->
+  
+  
+    
+    <script src="projects/gameOfQuotes/assets_gameOfQuotes/jquery-1.12.3.min.js"></script>
+    <script src="scripts/gameOfQuotes.js">
+    </script>
+</body>
