@@ -1,5 +1,29 @@
 //Running jquery-1.12.3.min.js
 
+// BUTTONS
+
+// EXPERIENCE button to toggle exp table reveal (and turn off other one)
+$(document).ready(function(){
+    $('#btn-exp').click(function(){
+        $('#work-exp-tab').toggleClass('hidden');
+        $('#edu-summ-tab').addClass('hidden');
+        $('#btn-exp').toggleClass('current-resume');
+        $('#btn-edu').removeClass('current-resume');
+
+    });
+});
+
+// EDUCATION button to toggle edu table reveal (and turn off other one)
+$(document).ready(function(){
+    $('#btn-edu').click(function(){
+        $('#edu-summ-tab').toggleClass('hidden');
+        $('#work-exp-tab').addClass('hidden');
+        $('#btn-edu').toggleClass('current-resume');
+        $('#btn-exp').removeClass('current-resume');
+
+    });
+});
+
 
 // ABOUT 
 
@@ -64,10 +88,6 @@ $('#business').click(function() {
     $('#business').addClass('hidden'); //swap buttons back
     
     $("#about").css("background-color","#fff"); // return original background color
-    
-    
-    
-    
 });
 
 
@@ -119,28 +139,6 @@ $('#business').click(function() {
 // End FOLIO FILTER
 
 
-
-// EXPERIENCE button to toggle exp table reveal (and turn off other one)
-$(document).ready(function(){
-    $('#btn-exp').click(function(){
-        $('#work-exp-tab').toggleClass('hidden');
-        $('#edu-summ-tab').addClass('hidden');
-        $('#btn-exp').toggleClass('current-resume');
-        $('#btn-edu').removeClass('current-resume');
-        
-    });
-});
-
-// EDUCATION button to toggle edu table reveal (and turn off other one)
-$(document).ready(function(){
-    $('#btn-edu').click(function(){
-        $('#edu-summ-tab').toggleClass('hidden');
-        $('#work-exp-tab').addClass('hidden');
-        $('#btn-edu').toggleClass('current-resume');
-        $('#btn-exp').removeClass('current-resume');
-        
-    });
-});
 
 //FOR TOUCH SCREENS - toggle touchscreen behaviour in gallery
 $(function(){

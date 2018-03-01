@@ -1,0 +1,151 @@
+/* GLOBAL */
+* {
+    text-align: center;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    color: #000;
+}
+body {
+    margin: 0 0 0 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* NAV */
+nav {
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    background: #fff; /* rgba not in all browsers */
+    background: rgba(255,255,255,0.6);
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-transform: lowercase;
+    text-align: center;
+    overflow: visible;
+    z-index: 999;
+}
+.inline-wrapper {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+#logo {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    margin: 0 0 0 10px;
+}
+.main-menu {
+    display: inline-block;
+    float: left;
+    width: auto;
+    margin: 8.5px;
+}
+.main-menu li {
+    display: inline;
+    padding: 0 0 0 15px;
+    text-transform:uppercase;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    float: left;
+    font-style: normal;
+}
+.menu-social {
+    display: inline-block;
+    font-size: 25px;
+    width: auto;
+    margin-top: 7px;
+    margin-left: -25px;
+}
+.menu-social li {
+    display: inline;
+    padding: 0 0 0 8px;
+}
+
+/* email dropdown menu */
+.dropdown-content {
+    position: absolute;
+    display: none;
+    min-width: 100px;
+    text-transform: lowercase;
+    background-color: #b3ffcc;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    display: block;
+    font-size: 12px;
+    padding: 5px;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background-color: #02C025;
+    border-radius: 5px;
+    color: #b3ffcc;
+    text-transform: uppercase;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    height: 300px;
+    background: url("../assets/bg_forest_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer-container {
+    height: 45px;
+    /*margin-top: 200px;*/
+    background: #000;
+    background: rgba(0,0,0,0.6);
+}
+.footer-left {
+    float: left;
+    width: 50%;
+}
+.footer-left p {
+    text-align: left;
+    padding-left: 30px;
+    color: #fff;
+}
+.footer-right {
+    float: left;
+    width: 50%;
+}
+.footer-right p {
+    color: #fff;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 40px;
+}
+
+
+
+
+/*  MEDIA QUERIES */
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+    /* Small Desktop & ipad - 3 tiles */
+    nav {
+        height: 40px;
+    }
+}
+
+
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+    /* Medium Desktop and up - 4 tiles */
+
+    nav {
+        height: 40px;
+    }
+
+}

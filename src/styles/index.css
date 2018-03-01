@@ -21,8 +21,9 @@ a {
 }
 
 
-/* HEADER and NAV */
-header {
+/* nav
+and NAV */
+nav {
     position: fixed;
     height: 40px;
     width: 100%;
@@ -101,11 +102,12 @@ header {
     padding: 0 0 0 8px;
 }
 
+
 /* JUMBOTRON */
 
 .jumbotron {
     height: 660px;
-    background: url("../assets/tumblr_o00a8qMFaf1slhhf0o1_1280.jpg");
+    background: url("../assets/bg_forest_1280.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -187,7 +189,7 @@ header {
 /*pictures are all edited to 460px square, so they will be scaled down on all but biggest screens. Will look crisp af*/
 #folio {
     padding-bottom: 30px;
-    background: url(../assets/tumblr_o00a8qMFaf1slhhf0o1_1280.jpg);
+    background: url("../assets/bg_forest_1280.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -405,7 +407,7 @@ tr:hover {
 footer {
     margin-top: 60px;
     height: 300px;
-    background: url("/assets/tumblr_o00a8qMFaf1slhhf0o1_1280.jpg");
+    background: url("../assets/bg_forest_1280.jpg");
     background-position: center;
     background-size: cover;
     
@@ -448,7 +450,7 @@ footer {
 /* smartphone view - 1 tile*/
     
     /* Nav Bar */
-    header {
+    nav {
         height: 75px;
     }
     .main-menu li {
@@ -508,7 +510,7 @@ footer {
     /*expanded from 481px for contact*/
     
     /* Nav Bar */
-    header {
+    nav {
         height: 75px;
     }
     

@@ -47,67 +47,77 @@ APPLYING FOR NEW JOB? update site checklist
     
 <body class="no-touch">
     
-<!--  NAV and HEADER  -->
-    <header>
-        <div class="inline-wrapper">
-            <a id="logo" href="#" title="home">
-                <img src="assets/logo_simpleBlog.png"
+<!--  NAV  -->
+<nav>
+    <div class="inline-wrapper">
+        <a id="logo" href="#" title="home">
+            <img src="assets/logo_folio.png"
                  alt="Tim logo"
                  title="Logo for Tim Day Folio site"
                  height="40px"/>
+        </a>
+        <ul class="main-menu">
+            <li>
+                <a href="#folio">Folio</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#resume">Resume</a>
+            </li>
+        </ul>
+
+        <ul class="menu-social">
+            <li class="dropdown">
+                <a title="email" class="text-email" href="mailto:timmday.info@gmail.com" target="_blank">
+                    <img src="assets/social-icons-transparent/icon-email2.png" alt="email"
+                         title="email Tim Day"
+                         width="22"/>
+                </a>
+                <div class="dropdown-content">
+                    <a>timmday.info@gmail.com</a>
+                    <a>timothy.day@student.uni-tuebingen.de</a>
+                </div>
+            </li>
+
+            <li>
+                <a title="Linked In" href="https://www.linkedin.com/in/timothympday" target="_blank">
+                    <img src="assets/social-icons-transparent/icon-linkedin.png" alt="Linked In"
+                         title="Linked In Tim Day"
+                         width="22">
+                </a>
+            </li>
+
+            <li><a title="github" href="https://github.com/TimmDay" target="_blank">
+                <img src="assets/social-icons-transparent/icon-github.png" alt="github"
+                     title="GitHub Tim Day"
+                     width="22"></a>
+            </li>
+
+            <li>
+                <a title="twitter" href="https://twitter.com/FishPlantFish" target="_blank">
+                    <img src="assets/social-icons-transparent/icon-twitter.png" alt="Twitter"
+                         title="Twitter Tim Day"
+                         width="22"/>
+                </a>
+            </li>
+
+            <li><a title="Medium" href="https://medium.com/@FishPlantFish" target="_blank">
+                <img src="assets/social-icons-transparent/icon-medium.png" alt="Medium"
+                     title="Medium Tim Day"
+                     width="22"/>
             </a>
-                <ul class="main-menu">
-                    <li>
-                        <a href="#folio">Folio</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                    
-                    <li class="dropdown">
-                        <a class="menu-contact" href="#resume">Contact</a>
-                        <div class="dropdown-content">
-                            <a>timmday.info@gmail.com</a>
-                            <a title="twitter" href="https://twitter.com/FishPlantFish" target="_blank">twitter</a>
-                            <a title="Linked In" href="https://www.linkedin.com/in/timothympday" target="_blank">linked in</a>
-                            
-                        </div>
-                    </li>
-                    
-                </ul>
-            
-                <ul class="menu-social">
-                    <li><a title="github" href="https://github.com/TimmDay" target="_blank">
-                        <img src="assets/social-icons-transparent/icon-github.png" alt="github"
-                        title="GitHub Tim Day"
-                        width="22"></a>
-                    </li>
-                    <li><a title="Linked In" href="https://www.linkedin.com/in/timothympday" target="_blank">
-                        <img src="assets/social-icons-transparent/icon-linkedin.png" alt="Linked In"
-                        title="Linked In Tim Day"
-                        width="22"></a>
-                    </li>
-                    <li><a title="twitter" href="https://twitter.com/FishPlantFish" target="_blank">
-                        <img src="assets/social-icons-transparent/icon-twitter.png" alt="Twitter"
-                        title="Twitter Tim Day"
-                        width="22"/></a>
-                    </li>
-                    <li><a title="facebook" href="https://www.facebook.com/tim.day.3956" target="_blank">
-                        <img src="assets/social-icons-transparent/icon-facebook.png" alt="facebook"
-                        title="Facebook Tim Day"
-                        height="22"></a>
-                    </li>
-                    <li><a title="Medium" href="https://medium.com/@FishPlantFish" target="_blank">
-                        <img src="assets/social-icons-transparent/icon-medium.png" alt="Medium"
-                        title="Medium Tim Day"
-                        width="22"/></a>
-                    </li> 
-                </ul>
-        </div>
-    </header>
+            </li>
+
+            <li><a title="facebook" href="https://www.facebook.com/tim.day.3956" target="_blank">
+                <img src="assets/social-icons-transparent/icon-facebook.png" alt="facebook"
+                     title="Facebook Tim Day"
+                     height="22"></a>
+            </li>
+        </ul>
+    </div>
+</nav>
     
 <!--  JUMBOTRON  -->
     <div class="jumbotron">
@@ -115,6 +125,9 @@ APPLYING FOR NEW JOB? update site checklist
         <div class="jumbo-title">
             <h1><a href="#">Tim M Day</a></h1>
             <h3>Carrot and Code</h3>
+            <button id="btn-exp" class="btn-default">Experience </button>
+            <!--<button id="btn-cv" class="btn-default">1-page CV</button>-->
+            <button id="btn-edu" class="btn-default">Education</button>
         </div>
     </div>
     
@@ -412,7 +425,7 @@ APPLYING FOR NEW JOB? update site checklist
         <div class="container">
             <div class="col33-base">
                 <div class="icon">
-                    <img src="assets/social-icons-transparent/icon-work.png" height=40 alt="icon for work experience" title="Summary of Work Experience"/>
+                    <img src="assets/social-icons-transparent/icon-experience.png" height=40 alt="icon for work experience" title="Summary of Work Experience"/>
                 </div>
                 <button id="btn-exp" class="btn-default">Experience </button>
             </div>
@@ -533,8 +546,7 @@ APPLYING FOR NEW JOB? update site checklist
                 <p>&copy;Tim Day 2016. All rights reserved.</p>
             </div>
             <div class="footer-right">
-                <p>"Whack a little quote at the bottom"
-                </p>
+                <p>"Whack a little quote at the bottom"</p>
             </div>
         </div>
     </footer>
