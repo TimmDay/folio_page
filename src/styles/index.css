@@ -143,9 +143,9 @@ header img {
     background-color: #fff;
 }
 .col50-left {
-    width: 30%;
+    width: 35%;
     float: left;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: 10px;
 }
 .col50-right{
@@ -157,7 +157,7 @@ header img {
     margin: 0 auto;
     margin-top: 50px;
     letter-spacing: 1.3px;
-    line-height: 1.4em;
+    line-height: 1.6em;
     font-size: 20px;
 }
 .text-snippet span {
