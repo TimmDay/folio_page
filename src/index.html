@@ -2,12 +2,15 @@
 <html lang="en">
     
     
-<!-- TO TO
+<!-- TO DO
+
+- shrink party pictures down to height 200px
+- compress background img
+- shrink social icons to 100 px square
 
 1. fix party mode on nexus tab/phone
 2. enlarge zoom pictures for folio
 
-- make a folio item for math tutoring?
 - link to TAPS blog post?
 
 - update linkedin
@@ -34,7 +37,7 @@ APPLYING FOR NEW JOB? update site checklist
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- This tells mobile browers not to scale the page down by default, which allows the media queries to instead be applied-->
     
-    <title>CV &amp; Folio | Tim M Day</title>
+    <title>Folio &amp; CV | Tim Day</title>
     <meta name="description"
           content="The Curriculum Vitae and Dev Portfolio of Tim Day">
     <meta name="author"
@@ -119,346 +122,71 @@ APPLYING FOR NEW JOB? update site checklist
     </div>
 </nav>
     
-<!--  JUMBOTRON  -->
-    <div class="jumbotron">
-        <img src="assets/timmy_day.jpg" height=40% alt="portrait of Tim Day" title="Hello!">
-        <div class="jumbo-title">
-            <h1><a href="#">Tim M Day</a></h1>
-            <h3>Carrot and Code</h3>
-            <button id="btn-exp" class="btn-default">Experience </button>
-            <!--<button id="btn-cv" class="btn-default">1-page CV</button>-->
-            <button id="btn-edu" class="btn-default">Education</button>
-        </div>
+<!--  HEADER  -->
+<header>
+    <img src="assets/timmy_day.jpg" height=40% alt="portrait of Tim Day" title="Hello!">
+    <div class="header__titleBar">
+        <h1>Tim M Day</h1>
+        <h3>always learning</h3>
     </div>
+</header>
     
 <!-- ABOUT SECTION -->
-    <div id="about">      
+    <section id="about">
         <div class="col50-left">
-            <p class="text-snippet">Gday, I'm Tim.<br/> I'm learning to code.<br/>Thanks for perusing my folio.<br/> Languages and sustainability <span>(especially aquaponics)</span> also fascinate me, and I can't wait to bring new programming skills to these areas.</p>
+            <p class="text-snippet">Gday I'm Tim.
+                <br/>Welcome to the Tim folio.
+                <br/>I enjoy bare-knuckle problem solving
+                <br/>AND the design process.
+                <br/>I'm also a fan of footy and sustainability
+                <span>(especially aquaponics)</span>.
+            </p>
+
         </div>
+
+
         <div class="col50-right">
             
             <div id="about-img">
-                <img  id="pulse-pic-place" src="assets/folio_photos/tim-day-about.jpg" alt="" title="farm grown dinner in the field in Colorado" height=200/>
-                
-                <img class="hidden" src="assets/folio_photos/party_mode/party2.jpg" alt="" title="farm grown dinner in the field in Colorado" height=200/>
-                
-                <img class="hidden" src="assets/folio_photos/bizdog.jpg" alt="" title="farm grown dinner in the field in Colorado" height=200/>
-                
-                <img class="hidden" src="assets/folio_photos/party_mode/party6.jpg" alt="" title="farm grown dinner in the field in Colorado" height=200/>
-                
-                <img class="hidden" src="assets/folio_photos/party_mode/party1.jpg" alt="" title="farm grown dinner in the field in Colorado" height=200/>
-                
-                <img class="hidden" src="assets/folio_photos/tim-biz2.jpg" alt="" title="farm grown dinner in the field in Colorado" height=200/>
-                
-                <img class="hidden" src="assets/folio_photos/party_mode/party5.jpg" alt="" title="farm grown dinner in the field in Colorado" height=200/>
+                <img src="assets/party-mode/tim-day-about.png" alt="farm grown dinner in the field in Colorado" title="tim day" height=200/>
+                <img class="hidden" src="assets/party-mode/party1.png" alt="side car sunset" title="tim day" height=200/>
+                <img class="hidden" src="assets/party-mode/party2.png" alt="rock star hair-do" title="tim day" height=200/>
+                <img class="hidden" src="assets/party-mode/party3.png" alt="mud mask" title="tim day" height=200/>
+                <img class="hidden" src="assets/party-mode/party4.png" alt="buddy the puppy" title="tim day" height=200/>
+                <img class="hidden" src="assets/party-mode/party5.png" alt="playing guitar" title="tim day" height=200/>
             </div>
-            
             <div class="clearfix"></div>
-            
+
             <button id="party">party mode</button>
             <button id="business" class="hidden">business time</button>
-            <button id="karen" class="hidden">karen mode</button>
+
+
+
         </div>
-        
+
         <div class="clearfix"></div>
-    </div>
-    
-<!-- FOLIO GALLERY -->
-    <div id="folio">
-        <div class="folio-title">
-            <h1>Folio</h1>
-            <p>What do I do that interests you?</p>
-        
-            <div id="buttons" class="folio-filter"></div> <!-- JS button storage -->
-        </div> 
-        
-        <div class="wrapper-gallery">
 
-            <div id="js-calc" class="img-square" data-tags="Web Dev">
-                <div class="inner-square">
-                    <a href="calculator-index.html" target="_blank">
-                        <img src="assets/folio_photos/r2d2-460.png"
-                             alt="with hidden js buttons"
-                             title="R2D2 JS Calculator"/>
-                    </a>
-                    <div class="title-box">
-                        R2D2 JS Calculator <br/> with hidden js buttons
-                    </div>
-                </div>
-            </div>
+        <p class="about__cvLink">printable 1 page CV
+            <a href="https://docs.google.com/document/d/1eIEiYQ27yD6dSuDw10MSjBbCY8CylNtXxfvXmeHCFp4/edit?usp=sharing">
+                here</a>
+        </p>
+        <button id="btn-exp" class="btn-default">Experience </button>
+        <!--<button id="btn-cv" class="btn-default">1-page CV</button>-->
+        <button id="btn-edu" class="btn-default">Education</button>
 
-            <div id="todo-list" class="img-square" data-tags="Web Dev">
-                <div class="inner-square">
-                    <a href="http://timmday.com/projects/todoList/todo_index.html" target="_blank">
-                        <img src="assets/folio_photos/todo-list.png"
-                        alt="Make a list and sort it"
-                        title="Todo List"/>
-                    </a>
-                    <div class="title-box">
-                         Todo List <br/> Object Oriented Vanilla Javascript with sorting
-                    </div>
-                </div>
-            </div>
-            
-            <div id="missionBriefing" class="img-square" data-tags="Web Dev">
-                <div class="inner-square">
-                    <a href="http://timmday.com/projects/wikiViewer/wiki-index.html" target="_blank">
-                        <img src="assets/folio_photos/wikiViewer.png"
-                        alt="MI6 mission support from the great folks at wikipedia"
-                        title="Wikipedia Viewer"/>
-                    </a>
-                    <div class="title-box">
-                         MI6 Intelligence<br/>00 Agent: Bond
-                    </div>
-                </div>
-            </div>
-            
-            <div id="weatherWhinge" class="img-square" data-tags="Web Dev">
-                <div class="inner-square">
-                    <a href="http://timmday.com/projects/weatherWhinge/weatherWhinge.html" target="_blank">
-                        <img src="assets/folio_photos/weatherWhinge.png" alt="Check the weather and compare to a place with even worse weather, to make you feel better"
-                        title="Weather App"/>
-                    </a>
-                    <div class="title-box">
-                         Weather App<br/>It could be worse
-                    </div>
-                </div>
-            </div>
-            
-            <div id="gameOfQuotes" class="img-square" data-tags="Web Dev">
-                <div class="inner-square">
-                    <a href="gameOfQuotes.html" target="_blank">
-                        <img src="assets/folio_photos/gameOfQuotes.png" alt="API and JSON - Random Quote Generator"
-                        title="Winter is Coming"/>
-                    </a>
-                    <div class="title-box">
-                         Game Of Quotes<br/>Quote Generator with API implementation
-                    </div>
-                </div>
-            </div>
-            
-            <div id="tubingen" class="img-square" data-tags="Web Dev,Education">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/tubingen.png" alt="Tuebingen University Logo"
-                    title="Programming Human Language at Universitat Tübingen"/>
-                    <div class="title-box">
-                         Computational Linguistics Degree Universitat Tübingen Germany
-                    </div>
-                </div>
-            </div>
-            
-            <div id="aquaponics-boulder" class="img-square" data-tags="Aquaponics">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/aquaponics-boulder-system.jpg"
-                    alt="Indoor Aquaponic System in Boulder CO"
-                    title="An indoor aquaponic system I built in Boulder CO"/>
-                    <div class="title-box">
-                        Aquaponic Hobby Systems
-                    </div>
-                </div>
-            </div>
-            
-            <div id="web-dev-folio" class="img-square" data-tags="Web Dev">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/webdev1.jpg"
-                    alt="This Website!"
-                    title="My first development project. How meta"/>
-                    <div class="title-box">
-                        This Website!<br/>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="grove-labs-product-redesign" class="img-square" data-tags="Aquaponics,Business">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/groveEcosystem.jpg" alt="The Grove Labs Aquaponic Ecosystem"
-                    title="Grove Labs luxury aquaponic unit for growing food in homes"
-                    />
-                    <div class="title-box">
-                        Grove Labs<br/>The Ecosystem
-                    </div>
-                </div>
-            </div>
-            
-            <div id="press" class="img-square" data-tags="Aquaponics,Business">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/grove1.jpg"
-                    alt="Tim in The Boston Globe"
-                    title="Tim occasionally appeared in Boston media (inc The Globe) while working at Grove"/>
-                    <div class="title-box">
-                        The Boston Globe<br/>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="grove-labs-product-prototype" class="img-square" data-tags="Aquaponics,Business,Engineering">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/grove2.jpg"
-                    alt="The Grove Labs Ecosystem Prototype"
-                    title="Grove Labs beta test prototype, shipped in Boston MA"
-                    />
-                    <div class="title-box">
-                        Grove Labs<br/>beta test prototype
-                    </div>
-                </div>
-            </div>
-            
-            <div id="provisional-patent" class="img-square" data-tags="Aquaponics,Business,Engineering">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/uspatentoffice.jpeg"
-                    alt="Seal of US Patent and Trademark Office"
-                    title="Listed as an Inventor on application 62123269, titled: 'Grove Labs Appliance'"
-                    />
-                    <div class="title-box">
-                        Official Inventor:<br/>Provisional Patent 62123269, 4768-0003-PROV
-                    </div>
-                </div>
-            </div>
-            
-            <div id="teaching-kids" class="img-square" data-tags="Aquaponics,Misc">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/grove3.jpg"
-                    alt="Tim teaching Aquaponics"
-                    title="Tim teaching a group of grade 4 kids about Aquaponics, in Boston MA"/>
-                    <div class="title-box">
-                        Teaching Aquaponics to Groups
-                    </div>
-                </div>
-            </div>
-            
-            <div id="degree-civil" class="img-square" data-tags="Engineering,Education">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/degree.jpg"
-                    alt="Civil Engineering Degree"
-                    title="Bachelor of Engineering with Honours - UNSW"/>
-                    <div class="title-box">
-                        Bachelor of Engineering <br/>
-                        UNSW Australia
-                    </div>
-                </div>
-            </div>
-            
-            <div id="monash-university-aquaponics" class="img-square" data-tags="Engineering,Aquaponics,Education">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/aquaponicsTheisis.jpg"
-                    alt="Aquaponics Honours Project Monash University"
-                    title="The Viability of Aquaponics as a Small Scale Food Production Method"/>
-                    <div class="title-box">
-                        Engineering Honours Project at Monash University
-                    </div>
-                </div>
-            </div>
-            
-            <div id="university-arizona-course" class="img-square" data-tags="Aquaponics,Engineering,Education">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/aquaponics-ceac-cert.jpg"
-                    alt=""
-                    title="University of Arizona - Controlled Environment Agriculture Center"/>
-                    <div class="title-box">
-                        Greenhouse Crop Production and Engineering Design Course
-                    </div>
-                </div>
-            </div>
-            
-            <div id="TAPS-1" class="img-square" data-tags="Aquaponics,Business">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/aquaponics-taps-1.jpg"
-                    alt="The Aquaponic Source office display system" 
-                    title="Office aquaponics display system - running a grow lighting comparison trial"
-                    />
-                    <div class="title-box">
-                        The Aquaponic Source<br/>Display and Prototype Systems
-                    </div>
-                </div>
-            </div>
-            
-            <div id="TAPS-2" class="img-square" data-tags="Aquaponics,Web Dev,Business">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/aquaponicsTAPScommunity.png"
-                    alt="The Aquaponic Community" 
-                    title="The Aquaponic Community was 11,000 members strong at the time I was running it"
-                    />
-                    <div class="title-box">
-                        The Aquaponic Source<br/>Online Community and Blog
-                    </div>
-                </div>
-            </div>
-            
-            <div id="aquaponics-green-acres" class="img-square" data-tags="Aquaponics,Education">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/aquaponicsCourse.jpg" alt="Green Acres Aquaponic Farming Course 2013"
-                    title="Green Acres Aquaponic Farming Course 2013"/>
-                    <div class="title-box">
-                        Green Acres Aquaponic Farming Course - Denver 2013
-                    </div>
-                </div>
-            </div>
-            
-            <div id="melbourne-water" class="img-square" data-tags="Business,Engineering">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/civileng-melbournewater.jpg" alt="Melbourne Water - Brooklyn Pumping Station"
-                    title="Brooklyn Pumping Station reaches 18 stories underground"
-                    />
-                    <div class="title-box">
-                        Melbourne Water Engineer - Sewer and Drainage<br/>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="army" class="img-square" data-tags="Business,Misc">
-                <div class="inner-square">
-                    <img src="assets/folio_photos/misc-armyquals.JPG"
-                    alt="Tim in Australian Army"
-                    title="Don't worry, I'm a hippy now"/>
-                    <div class="title-box">
-                        The Australian Army
-                    </div>
-                </div>
-            </div> 
-            
-        </div>
-    </div>
-    
-<!-- RESUME SECTION -->
-    <div id="resume">
-        <div class="container">
-            <div class="col33-base">
-                <div class="icon">
-                    <img src="assets/social-icons-transparent/icon-experience.png" height=40 alt="icon for work experience" title="Summary of Work Experience"/>
-                </div>
-                <button id="btn-exp" class="btn-default">Experience </button>
-            </div>
-            
-            <div class="col33-base">
-                <div class="icon">
-                    <img src="assets/social-icons-transparent/icon-about.png" height=45 alt="icon for about Tim Day" title="About Tim Day"/>
-                </div>
-                <div id="btn-contact" class="btn-default" title="Thanks for dropping by!"><a class="text-email" href="mailto:timmday.info@gmail.com">email me</a></div>
-                
-            </div>
-            
-            <div class="col33-base">
-                <div class="icon">
-                    <img src="assets/social-icons-transparent/icon-edu.png" height=50 alt="icon for education" title="Summary of Formal Education"/>
-                </div>
-                <button id="btn-edu" class="btn-default">Education</button>
-            </div>
-            <div class="clearfix"></div> 
- 
-<!-- TABLES -->
+        <!-- TABLES -->
         <div id="work-exp-tab" class="hidden">
             <h1 class="table-title">Career Experience Summary</h1>
             <table>
-            <thead>    
+                <thead>
                 <tr>
                     <th scope="col">Year</th>
                     <th scope="col">Role</th>
                     <th scope="col">Company</th>
                     <th scope="col">Location</th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <tr>
                     <td class="tyear">2016 - </td>
                     <td class="tdescription">Studentwerk developer <br/> testing software to improve the precision of touchscreen pressure sensor manufacturing</td>
@@ -489,22 +217,21 @@ APPLYING FOR NEW JOB? update site checklist
                     <td>The Australian Army</td>
                     <td>Canberra, Australia</td>
                 </tr>
-            </tbody>
+                </tbody>
             </table>
         </div>
-            
         <div id="edu-summ-tab" class="hidden">
-        <h1 class="table-title">Education Summary</h1>
+            <h1 class="table-title">Education Summary</h1>
             <table>
-            <thead>    
+                <thead>
                 <tr>
                     <th scope="col">Year</th>
                     <th scope="col">Qualification</th>
                     <th scope="col">Institution</th>
                     <th scope="col">Location</th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <tr>
                     <td class="tyear">2016 - </td>
                     <td class="tdescription">BA Computational Linguistics</td>
@@ -529,18 +256,268 @@ APPLYING FOR NEW JOB? update site checklist
                     <td><a href="http://www.knox.vic.edu.au/">The Knox School</a></td>
                     <td>Melbourne, Australia</td>
                 </tr>
-            </tbody>
+                </tbody>
             </table>
         </div>
+    </section>
+    
+<!-- FOLIO GALLERY -->
+    <div id="folio">
+        <div class="folio-title">
+            <h1>Folio</h1>
+            <p>What do I do that interests you?</p>
         
-        <p>printable 1 page CV <a href="https://docs.google.com/document/d/1eIEiYQ27yD6dSuDw10MSjBbCY8CylNtXxfvXmeHCFp4/edit?usp=sharing">here</a></p>
+            <div id="buttons" class="folio-filter"></div> <!-- JS button storage -->
+        </div> 
+        
+        <div class="wrapper-gallery">
+
+            <div id="js-calc" class="img-square" data-tags="Web Dev">
+                <div class="inner-square">
+                    <a href="calculator-index.html" target="_blank">
+                        <img src="assets/gallery/gal_r2d2.png"
+                             alt="with hidden js buttons"
+                             title="R2D2 JS Calculator"/>
+                    </a>
+                    <div class="title-box">
+                        R2D2 JS Calculator <br/> with hidden js buttons
+                    </div>
+                </div>
+            </div>
+
+            <div id="todo-list" class="img-square" data-tags="Web Dev">
+                <div class="inner-square">
+                    <a href="http://timmday.com/projects/todoList/todo_index.html" target="_blank">
+                        <img src="assets/gallery/gal_todo_460.png"
+                        alt="Make a list and sort it"
+                        title="Todo List"/>
+                    </a>
+                    <div class="title-box">
+                         Todo List <br/> Object Oriented Vanilla Javascript with sorting
+                    </div>
+                </div>
+            </div>
+            
+            <div id="missionBriefing" class="img-square" data-tags="Web Dev">
+                <div class="inner-square">
+                    <a href="http://timmday.com/projects/wikiViewer/wiki-index.html" target="_blank">
+                        <img src="assets/gallery/gal_wikiViewer.png"
+                        alt="MI6 mission support from the great folks at wikipedia"
+                        title="Wikipedia Viewer"/>
+                    </a>
+                    <div class="title-box">
+                         MI6 Intelligence<br/>00 Agent: Bond
+                    </div>
+                </div>
+            </div>
+            
+            <div id="weatherWhinge" class="img-square" data-tags="Web Dev">
+                <div class="inner-square">
+                    <a href="http://timmday.com/projects/weatherWhinge/weatherWhinge.html" target="_blank">
+                        <img src="assets/gallery/gal_weatherWhinge.png" alt="Check the weather and compare to a place with even worse weather, to make you feel better"
+                        title="Weather App"/>
+                    </a>
+                    <div class="title-box">
+                         Weather App<br/>It could be worse
+                    </div>
+                </div>
+            </div>
+            
+            <div id="gameOfQuotes" class="img-square" data-tags="Web Dev">
+                <div class="inner-square">
+                    <a href="gameOfQuotes.html" target="_blank">
+                        <img src="assets/gallery/gal_quotes.png" alt="API and JSON - Random Quote Generator"
+                        title="Winter is Coming"/>
+                    </a>
+                    <div class="title-box">
+                         Game Of Quotes<br/>Quote Generator with API implementation
+                    </div>
+                </div>
+            </div>
+            
+            <div id="tubingen" class="img-square" data-tags="Web Dev,Education">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_tubingen.png" alt="Tuebingen University Logo"
+                    title="Programming Human Language at Universitat Tübingen"/>
+                    <div class="title-box">
+                         Computational Linguistics Degree Universitat Tübingen Germany
+                    </div>
+                </div>
+            </div>
+            
+            <div id="aquaponics-boulder" class="img-square" data-tags="Aquaponics">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_apHobby.jpg"
+                    alt="Indoor Aquaponic System in Boulder CO"
+                    title="An indoor aquaponic system I built in Boulder CO"/>
+                    <div class="title-box">
+                        Aquaponic Hobby Systems
+                    </div>
+                </div>
+            </div>
+            
+            <div id="web-dev-folio" class="img-square" data-tags="Web Dev">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_thisSite.jpg"
+                    alt="This Website!"
+                    title="My first development project. How meta"/>
+                    <div class="title-box">
+                        This Website!<br/>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="grove-labs-product-redesign" class="img-square" data-tags="Aquaponics,Business">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_groveEcosystem.jpg" alt="The Grove Labs Aquaponic Ecosystem"
+                    title="Grove Labs luxury aquaponic unit for growing food in homes"
+                    />
+                    <div class="title-box">
+                        Grove Labs<br/>The Ecosystem
+                    </div>
+                </div>
+            </div>
+            
+            <div id="press" class="img-square" data-tags="Aquaponics,Business">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_apBostonGlobe.jpg"
+                    alt="Tim in The Boston Globe"
+                    title="Tim occasionally appeared in Boston media (inc The Globe) while working at Grove"/>
+                    <div class="title-box">
+                        The Boston Globe<br/>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="grove-labs-product-prototype" class="img-square" data-tags="Aquaponics,Business,Engineering">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_apGroveProto.jpg"
+                    alt="The Grove Labs Ecosystem Prototype"
+                    title="Grove Labs beta test prototype, shipped in Boston MA"
+                    />
+                    <div class="title-box">
+                        Grove Labs<br/>beta test prototype
+                    </div>
+                </div>
+            </div>
+            
+            <div id="provisional-patent" class="img-square" data-tags="Aquaponics,Business,Engineering">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_uspatentoffice.jpeg"
+                    alt="Seal of US Patent and Trademark Office"
+                    title="Listed as an Inventor on application 62123269, titled: 'Grove Labs Appliance'"
+                    />
+                    <div class="title-box">
+                        Official Inventor:<br/>Provisional Patent 62123269, 4768-0003-PROV
+                    </div>
+                </div>
+            </div>
+            
+            <div id="teaching-kids" class="img-square" data-tags="Aquaponics,Misc">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_apGroveTeaching.jpg"
+                    alt="Tim teaching Aquaponics"
+                    title="Tim teaching a group of grade 4 kids about Aquaponics, in Boston MA"/>
+                    <div class="title-box">
+                        Teaching Aquaponics to Groups
+                    </div>
+                </div>
+            </div>
+            
+            <div id="degree-civil" class="img-square" data-tags="Engineering,Education">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_civEngDegree.jpg"
+                    alt="Civil Engineering Degree"
+                    title="Bachelor of Engineering with Honours - UNSW"/>
+                    <div class="title-box">
+                        Bachelor of Engineering <br/>
+                        UNSW Australia
+                    </div>
+                </div>
+            </div>
+            
+            <div id="monash-university-aquaponics" class="img-square" data-tags="Engineering,Aquaponics,Education">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_apHonors.jpg"
+                    alt="Aquaponics Honours Project Monash University"
+                    title="The Viability of Aquaponics as a Small Scale Food Production Method"/>
+                    <div class="title-box">
+                        Engineering Honours Project at Monash University
+                    </div>
+                </div>
+            </div>
+            
+            <div id="university-arizona-course" class="img-square" data-tags="Aquaponics,Engineering,Education">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_apCEAC.jpg"
+                    alt=""
+                    title="University of Arizona - Controlled Environment Agriculture Center"/>
+                    <div class="title-box">
+                        Greenhouse Crop Production and Engineering Design Course
+                    </div>
+                </div>
+            </div>
+            
+            <div id="TAPS-1" class="img-square" data-tags="Aquaponics,Business">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_apTAPS.jpg"
+                    alt="The Aquaponic Source office display system" 
+                    title="Office aquaponics display system - running a grow lighting comparison trial"
+                    />
+                    <div class="title-box">
+                        The Aquaponic Source<br/>Display and Prototype Systems
+                    </div>
+                </div>
+            </div>
+            
+            <div id="TAPS-2" class="img-square" data-tags="Aquaponics,Web Dev,Business">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_apTAPScommunity.png"
+                    alt="The Aquaponic Community" 
+                    title="The Aquaponic Community was 11,000 members strong at the time I was running it"
+                    />
+                    <div class="title-box">
+                        The Aquaponic Source<br/>Online Community and Blog
+                    </div>
+                </div>
+            </div>
+            
+            <!--<div id="aquaponics-green-acres" class="img-square" data-tags="Aquaponics,Education">-->
+                <!--<div class="inner-square">-->
+                    <!--<img src="assets/gallery/ga" alt="Green Acres Aquaponic Farming Course 2013"-->
+                    <!--title="Green Acres Aquaponic Farming Course 2013"/>-->
+                    <!--<div class="title-box">-->
+                        <!--Green Acres Aquaponic Farming Course - Denver 2013-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            
+            <div id="melbourne-water" class="img-square" data-tags="Business,Engineering">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_civeng_melbournewater.jpg" alt="Melbourne Water - Brooklyn Pumping Station"
+                    title="Brooklyn Pumping Station reaches 18 stories underground"
+                    />
+                    <div class="title-box">
+                        Melbourne Water Engineer - Sewer and Drainage<br/>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="army" class="img-square" data-tags="Business,Misc">
+                <div class="inner-square">
+                    <img src="assets/gallery/gal_army.JPG"
+                    alt="Tim in Australian Army"
+                    title="Don't worry, I'm a hippy now"/>
+                    <div class="title-box">
+                        The Australian Army
+                    </div>
+                </div>
+            </div> 
             
         </div>
-    </div>
-   
-<!-- FOOTER -->
-    <footer>
-        <div class="footer-push"></div>
+
+
+    <!-- FOOTER -->
         <div class="footer-container">
             <div class="footer-left">
                 <p>&copy;Tim Day 2016. All rights reserved.</p>
@@ -549,8 +526,10 @@ APPLYING FOR NEW JOB? update site checklist
                 <p>"Whack a little quote at the bottom"</p>
             </div>
         </div>
-    </footer>
-    
+
+    </div>
+
+
 <!-- SCRIPTS Links -->
     
     <script src="assets/jquery-1.12.3.min.js"></script>

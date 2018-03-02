@@ -37,33 +37,23 @@ $('#party').click(function() {
     
     $('#party').addClass('hidden');  //change button access
     $('#business').removeClass('hidden');
-    
-    // make array of src attr to cycle through
-    /*var pulses = [];
-    pulses[0] = "/assets/folio_photos/party2.jpg"; //leopard
-    pulses[1] = "/assets/folio_photos/bizdog.jpg"; //biz dog
-    pulses[2] = "/assets/folio_photos/party6.jpg"; //actual dog
-    pulses[3] = "/assets/folio_photos/party1.jpg"; //pink karen
-    pulses[4] = "/assets/folio_photos/tim-biz2.jpg"; //sunnies
-    pulses[5] = "/assets/folio_photos/party5.jpg"; //cow*/
-    
-    //loop through those
+
     
     
     //loop through imgs in the #about-img div
     var i = 0;
     pulseLoop = setInterval(function() {
-        
+
+
         $('#about-img').children().eq(i).addClass('hidden');   //hide current photo
-        
         i++;    //go to next photo
-        
-        $('#about-img').children().eq(i).removeClass('hidden');                //reveal next photo
-        
-        if (i == 7) {
+        $('#about-img').children().eq(i).removeClass('hidden'); //reveal next photo
+
+        if (i == 6) {
             i = 0;
             $('#about-img').children().eq(i).removeClass('hidden');
         }
+
     }, 500); //time between img change
                 
               
